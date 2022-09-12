@@ -1,0 +1,152 @@
+:root {
+  --branding-color: darkgray;
+  --primary-color: black;
+  --secondary-color: lightgray;
+  --default-font-family: "Nunito", sans-serif;
+}
+body {
+  background-color: var (--secondary-color);
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1 {
+  font-family: var(--default-font-family);
+  font-size: 96px;
+}
+h2 {
+  font-size: 64px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.picture {
+  width: 360px;
+  border-radius: 10px;
+}
+.hero {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 120px 20px;
+}
+.hero p {
+  font-size: 36px;
+  margin: 0;
+}
+.hero h2 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 2;
+}
+.heading {
+  margin-top: 100px;
+}
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.btn-branding {
+  background: white;
+  border-radius: 4px;
+  color: black;
+  border: 1px solid black;
+  padding: 15px 30px;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.btn-branding :hover {
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  color: var(--branding-color);
+  padding: 15px 30px;
+  margin: 40px;
+}
+
+.btn-branding-outline {
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  color: black;
+  padding: 15px 30px;
+  margin-top: 40px;
+}
+
+.project-description {
+  padding: 30px 50px;
+}
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--branding-color);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: black;
+}
+.about-section {
+  margin-top: 80px;
+  padding: 120px 20px;
+}
+.about-section h1 {
+  font-size: 64px;
+}
+.about-section h1,
+h3,
+p {
+  font-family: var(--default-font-family);
+}
+.about-section h3 {
+  font-size: 24px;
+}
+
+.about-section-content {
+  margin: 40px;
+}
+@media (max-width: 576px) {
+  .project-description {
+    padding-top: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 28px;
+    padding-top: none;
+  }
+  .email-link {
+    font-size: 18px;
+  }
+  .contact-icon {
+    display: none;
+  }
+  .app-name {
+    font-size: 20px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+  p {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
