@@ -19,6 +19,9 @@ h1 {
 h2 {
   font-size: 64px;
 }
+h4 {
+  font-size: 48px;
+}
 
 p {
   font-size: 16px;
@@ -86,17 +89,39 @@ p {
 .project-description {
   padding: 30px 50px;
 }
-.email-link {
+
+footer {
+  margin: 60px 0;
+}
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .email-link {
   display: flex;
   justify-content: center;
-  color: var(--branding-color);
-  font-size: 22px;
   text-decoration: none;
+  color: black;
+  font-size: 24px;
 }
 
-.email-link:hover {
-  text-decoration: underline;
-  color: black;
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 12px 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
 }
 .content-container {
   margin-top: 60px;
@@ -141,12 +166,19 @@ p {
   .content-container h1 {
     font-size: 36px;
   }
+  footer .contact-box {
+    padding: 30px;
+  }
+
   h1 {
     font-size: 40px;
   }
   h3 {
     font-size: 28px;
     padding-top: none;
+  }
+  h4 {
+    font-size: 24px;
   }
 
   p {
